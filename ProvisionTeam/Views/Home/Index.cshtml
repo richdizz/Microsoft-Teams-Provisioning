@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h2>Create Team</h2>
+@using (Html.BeginForm("create", "home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <div class="row">
+        <div class="form-group">
+            <label class="control-label">Team Name</label>
+		    <input type="text" class="form-control" id="txtName" name="txtName" />
+        </div>
+    </div>
+    <div class="row">
+        <input type="submit" class="btn btn-default" />
+    </div>
+}
